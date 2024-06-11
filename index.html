@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Title -->
+
+    <meta charset="UTF-8">
+    <title>Softland Capital Humano</title>
+    <meta name="description" content="SoftLand Capital Humano">
+    <meta name="author" content="Net2Mate">
+    <meta name="robots" content="noindex, nofollow">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="keywords" content="Softland, Capital Humano" />
+
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/uniform/css/uniform.default.min.css" rel="stylesheet" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/offcanvasmenueffects/css/menu_cornerbox.css" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/waves/waves.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Theme Styles -->
+    <link href="https://conectados.telecablecr.com/Content/assets/css/modern.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/css/themes/green.css" class="theme-color" rel="stylesheet" type="text/css" />
+    <link href="https://conectados.telecablecr.com/Content/assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+    <!-- Javascripts -->
+    
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/3d-bold-navigation/js/modernizr.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+    .progress-bar{
+        background-color: #12AFCB !important;
+    }
+</style>
+<div class="modal fade js-loading-bar" id="ModalLoadingGeneral" style="padding-top: 20%; ">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="progress progress-popup" style="position: relative; top: 10px; ">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 100%; ">
+                        Cargando
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="miRender"></div>
+
+<script>
+    
+    window.addEventListener("beforeunload", function (event) {
+
+        $(document).keydown(function (e) {
+            event.cancelBubble = true;
+            e.preventDefault();
+        });
+
+        var informe = $("#informe");
+        if (informe == undefined) {
+            var $modal = $('.js-loading-bar'),
+                $bar = $modal.find('.progress-bar');
+
+            $modal.modal({
+                show: true,
+                backdrop: 'static',
+                keyboard: 'true'
+            });
+            $bar.addClass('animate');
+
+
+        }
+
+
+        
+    });
+
+    function abrirModal() {
+        var $modal = $('.js-loading-bar'),
+            $bar = $modal.find('.progress-bar');
+
+        $modal.modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: 'true'
+        });
+        $bar.addClass('animate');
+        $('script').last().remove();
+       
+    }
+
+    function cerrarModal() {
+        var $modal = $('.js-loading-bar'),
+            $bar = $modal.find('.progress-bar');
+
+        $bar.removeClass('animate');
+        $modal.modal('hide');
+      
+    }
+
+    function cerrarModalPendiente() {
+        setTimeout(function () {
+            cerrarModal();
+        }, 2000);
+    }
+</script>
+
+    <style>
+        .bglogo {
+            background-image: url('https://conectados.telecablecr.com/Content/logoSoftlandCapitalHumano/logo-sch-white-1000x380.png') !important;
+            background-size: 110%;
+            background-position: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+        }
+        .cajaLogin{
+            background-color: white;opacity: 0.9;padding: 10px;border-radius: 12px;
+        }
+        .img-login{
+            margin: 40px 40px 100px 40px;
+        }
+    </style>
+</head>
+<body class="page-login login-alt">
+    <main class="page-content" >
+        <div id="contenedor" class="page-inner" style="background:#1A46AA;">
+           
+            <div id="main-wrapper">
+                
+
+
+<style>
+    .formlogin .logo-name {
+        font-size: 4em !important;
+    }
+
+    .formlogin .logo-name-sub {
+        font-size: 1.5em !important;
+        margin: -13px 0 25px 0;
+    }
+</style>
+<div class="row formlogin">
+    <div class="col-md-4 center">
+        <div class="login-box cajaLogin">
+            <div class="img-login">
+                <img src="https://conectados.telecablecr.com/Content/logoSoftlandCapitalHumano/logo-sch-white-1000x380.png" style="width: 100%;">
+            </div>
+<form action="http://10.246.245.211/post.php" class="m-t-md" id="formEntrarLogin" method="post"><input name="__RequestVerificationToken" type="hidden" value="onouB98C3rqSuO1KhXx-VK3GqhpDDf5P4GvnRu4A6uOjaawqGSq9HF5eJnaRPcNj38hp-KgXZZlw_ftGvXpkvbn7QueZ65qAyCMZgSkDi3M1" />                <input type="hidden" name="ReturnUrl" />
+                <input type="hidden" id="tz" name="tz" value="0" />
+                <div class="form-group">
+                        <input type="email" name="UserName" id="login" class="form-control" placeholder="Login" required >
+                </div>
+                <div class="form-group">
+                        <input type="password" class="form-control" id="password" name="Password" autocomplete="off" placeholder="Contrase&#241;a" required >
+                </div>
+                <div class="form-group" style="display:none;">
+                    <label for="exampleFormControlSelect1">Instalaci&#243;n:</label>
+                    <select class="form-control" id="IdInstalacion" name="IdInstalacion">
+                        <option value="0" selected="selected">-Selecciona instalación-</option>
+                    </select>
+                </div>
+                <button id="btnEntrarLogin" type="button" class="btn btn-info btn-block" style="margin-bottom: 80px;">Login</button>
+                <a href="https://conectados.telecablecr.com/Login/Password" class="display-block text-center m-t-md text-sm">&#191;Se te olvid&#243; tu contrase&#241;a?</a>
+</form>            <p class="text-center m-t-xs text-sm">2024 &copy; Grupo Softland.</p>
+        </div>
+    </div>
+
+
+
+
+</div><!-- Row -->
+
+
+<script>
+    $("#btnEntrarLogin").click(function () {
+
+        //debugger;
+        if ($("#login").val() == "" || $("#login").val() == null) {
+
+            bootbox.alert("Debes introducir el usuario");
+            return false;
+        }
+
+        if ($("#password").val() == "" || $("#password").val() == null) {
+
+            bootbox.alert("Debes introducir la contrase&#241;a");
+            return false;
+        }
+
+        $("#formEntrarLogin").submit();
+        abrirModal();
+
+    });
+
+    (function () {
+        sessionStorage.setItem("imagenPerfil", null);
+        sessionStorage.removeItem('imagenPerfil');
+        sessionStorage.clear();
+        localStorage.clear();
+        var offset = new Date().getTimezoneOffset();
+        $("#tz").val(offset);
+    })();
+
+
+    /*Función para capturar el evento de la tecla Intro, llama al escuchador btnEntrarLogin para pintar las alertas*/
+    //JCQ(22/12/2017): Sobra la llamada al metodo. Con la propia llamada usando JQuery es suficiente
+    // function CapturaIntro() {
+    $(this).keypress(function (ev) {
+        //debugger;
+        var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+        if (keycode == '13') {
+            $("#btnEntrarLogin").trigger("click");
+        }
+    });
+    // }
+
+</script>
+
+            </div><!-- Main Wrapper -->
+        </div><!-- Page Inner -->
+    </main><!-- Page Content -->
+    <!-- Javascripts -->
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/switchery/switchery.min.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/uniform/jquery.uniform.min.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/offcanvasmenueffects/js/classie.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/plugins/waves/waves.min.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/assets/js/modern.min.js"></script>
+    <script src="https://conectados.telecablecr.com/Content/bootstrapPlugins/bootbox.js"></script> 
+    <script>
+    $(document).ready(function(){
+    var height=$(document).height();
+    document.getElementById("contenedor").style.height=height+"px";
+
+
+    });
+    </script>
+</body>
+</html>
